@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furynetwork.fury.orderbook;
+package merlinnetwork.fury.orderbook;
 
 option go_package = "github.com/merlin-network/fury/x/orderbook/types";
 

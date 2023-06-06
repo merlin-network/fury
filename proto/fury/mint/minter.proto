@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furynetwork.fury.mint;
+package merlinnetwork.fury.mint;
 
 option go_package = "github.com/merlin-network/fury/x/mint/types";
 

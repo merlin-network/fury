@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furynetwork.fury.bet;
+package merlinnetwork.fury.bet;
 
 option go_package = "github.com/merlin-network/fury/x/bet/types";
 

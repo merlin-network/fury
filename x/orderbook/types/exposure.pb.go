@@ -116,8 +116,8 @@ func (m *ParticipationExposure) XXX_DiscardUnknown() {
 var xxx_messageInfo_ParticipationExposure proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*BookOddsExposure)(nil), "furynetwork.fury.orderbook.BookOddsExposure")
-	proto.RegisterType((*ParticipationExposure)(nil), "furynetwork.fury.orderbook.ParticipationExposure")
+	proto.RegisterType((*BookOddsExposure)(nil), "merlinnetwork.fury.orderbook.BookOddsExposure")
+	proto.RegisterType((*ParticipationExposure)(nil), "merlinnetwork.fury.orderbook.ParticipationExposure")
 }
 
 func init() { proto.RegisterFile("fury/orderbook/exposure.proto", fileDescriptor_3aa5f8fec7488c62) }

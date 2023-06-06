@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furynetwork.fury.sportevent;
+package merlinnetwork.fury.sportevent;
 
 import "gogoproto/gogo.proto";
 import "fury/sportevent/sport_event.proto";
