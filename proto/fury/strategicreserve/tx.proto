@@ -1,0 +1,7 @@
+syntax = "proto3";
+package furynetwork.fury.strategicreserve;
+
+option go_package = "github.com/merlin-network/fury/x/strategicreserve/types";
+
+// Msg defines the Msg service.
+service Msg {}
