@@ -1,0 +1,188 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "fanfury",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://fury.fan/",
+  "update_link": "https://raw.githubusercontent.com/fanfury-sports/fanfury/main/chain.schema.json",
+  "pretty_name": "Fanfury",
+  "chain_id": "redshift-1",
+  "bech32_prefix": "fury",
+  "daemon_name": "furyd",
+  "node_home": "$HOME/.furyd",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ufury",
+        "fixed_min_gas_price": 0.0025,
+        "low_gas_price": 0.0025,
+        "average_gas_price": 0.025,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "ufury"
+      }
+    ],
+    "lock_duration": {
+      "time": "1209600s"
+    }
+  },
+  "codebase": {
+    "git_repo": "https://github.com/merlin-network/fanfury",
+    "recommended_version": "v3.1.0",
+    "compatible_versions": [
+      "v3.1.0"
+    ],
+    "cfurys_sdk_version": "0.45",
+    "consensus": {
+      "type": "tendermint",
+      "version": "0.34"
+    },
+    "cosmwasm_version": "0.30",
+    "cosmwasm_enabled": true,
+    "ibc_go_version": "4.3.0",
+    "ics_enabled": [
+      "ics20-1"
+    ],
+    "genesis": {
+      "name": "v3",
+      "genesis_url": "https://github.com/merlin-network/networks/raw/main/redshift-1/genesis.json"
+    },
+    "versions": [
+      {
+        "name": "v3",
+        "tag": "v3.1.0",
+        "height": 0,
+        "next_version_name": "v4"
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/fanfury-sports/chain-registry/master/fanfury/images/fanfury-chain-logo.png",
+      "theme": {
+        "primary_color_hex": "#231D4B"
+      }
+    }
+  ],
+  "logo_URIs": {
+    "png": "https://raw.githubusercontent.com/fanfury-sports/chain-registry/master/fanfury/images/fanfury-chain-logo.png",
+    "svg": "https://raw.githubusercontent.com/fanfury-sports/chain-registry/master/fanfury/images/fury.svg"
+  },
+  "peers": {
+    "seeds": [
+      {
+        "id": "f515a8599b40f0e84dfad935ba414674ab11a668",
+        "address": "fanfury.blockpane.com:26656",
+        "provider": "blockpane"
+      },
+      {
+        "id": "ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0",
+        "address": "seeds.polkachu.com:12556",
+        "provider": "Polkachu"
+      },
+      {
+        "id": "20e1000e88125698264454a884812746c2eb4807",
+        "address": "seeds.lavenderfive.com:12556",
+        "provider": "Lavender.Five Nodes 🐝"
+      },
+      {
+        "id": "ebc272824924ea1a27ea3183dd0b9ba713494f83",
+        "address": "fanfury-mainnet-seed.autostake.com:26716",
+        "provider": "AutoStake 🛡️ Slash Protected"
+      },
+      {
+        "id": "3cc024d1c760c9cd96e6413abaf3b36a8bdca58e",
+        "address": "seeds.goldenratiostaking.net:1630",
+        "provider": "Golden Ratio Staking"
+      }
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.fury.fan/",
+        "provider": "Fanfury Foundation"
+      },
+      {
+        "address": "https://rpc-fanfury.blockapsis.com",
+        "provider": "chainapsis"
+      },
+      {
+        "address": "https://fanfury-rpc.quickapi.com:443",
+        "provider": "Chainlayer"
+      },
+      {
+        "address": "https://rpc-fanfury.whispernode.com:443",
+        "provider": "WhisperNode 🤐"
+      },
+      {
+        "address": "https://fanfury-rpc.lavenderfive.com:443",
+        "provider": "Lavender.Five Nodes 🐝"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://lcd.fury.fan/",
+        "provider": "Fanfury Foundation"
+      },
+      {
+        "address": "https://fanfury-lcd.quickapi.com:443",
+        "provider": "Chainlayer"
+      },
+      {
+        "address": "https://lcd-fanfury.blockapsis.com",
+        "provider": "chainapsis"
+      },
+      {
+        "address": "https://fanfury-api.lavenderfive.com:443",
+        "provider": "Lavender.Five Nodes 🐝"
+      },
+      {
+        "address": "https://rest-fanfury.ecostake.com",
+        "provider": "ecostake"
+      }
+    ],
+    "grpc": [
+      {
+        "address": "fanfury-grpc.lavenderfive.com:443",
+        "provider": "Lavender.Five Nodes 🐝"
+      },
+      {
+        "address": "grpc-fanfury-ia.cfurysia.notional.ventures:443",
+        "provider": "Notional"
+      },
+      {
+        "address": "fanfury.grpc.stakin-nodes.com:443",
+        "provider": "Stakin"
+      },
+      {
+        "address": "fanfury-mainnet-grpc.autostake.com:443",
+        "provider": "AutoStake 🛡️ Slash Protected"
+      },
+      {
+        "address": "fanfury.grpc.interchain.ivaldilabs.xyz:433",
+        "provider": "ivaldilabs"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "EZ Staking Tools",
+      "url": "https://ezstaking.tools/fanfury",
+      "tx_page": "https://ezstaking.tools/fanfury/txs/${txHash}",
+      "account_page": "https://ezstaking.tools/fanfury/account/${accountAddress}"
+    }
+  ],
+  "keywords": [
+    "sports"
+  ]
+}

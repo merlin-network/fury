@@ -37,6 +37,34 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "black1tnl3y4fdv3wea48yk89wage0s7wclkuc2wvgwa",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "black1pnstapfzy663e9dvsswpnsekkf84spja7wj66u",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "black16y0dn0jvxq7fhzefumssqduq2dwr3z3m5nxraw",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "black1k49ufgpd2feumzf8ucftgz46dnzzqx8fvewslt",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -57,14 +85,45 @@
               "amount": "2000000000000"
             }
           ]
-        }
-      ],
-      "supply": [
+        },
         {
-          "denom": "ufury",
-          "amount": "2000000000000"
+          "address": "black1tnl3y4fdv3wea48yk89wage0s7wclkuc2wvgwa",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "2000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1pnstapfzy663e9dvsswpnsekkf84spja7wj66u",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "2000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black16y0dn0jvxq7fhzefumssqduq2dwr3z3m5nxraw",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "2000000000000"
+            }
+          ]
+        },
+        {
+          "address": "black1k49ufgpd2feumzf8ucftgz46dnzzqx8fvewslt",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "2000000000000"
+            }
+          ]
         }
       ],
+      "supply": [],
       "denom_metadata": []
     },
     "bet": {
@@ -85,7 +144,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "ufury",
         "amount": "1000"
       }
     },
@@ -136,7 +195,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "ufury",
             "amount": "10000000"
           }
         ],
@@ -312,7 +371,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "stake"
+        "bond_denom": "ufury"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
