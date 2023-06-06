@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.dvm;
+package fanfury.fury.dvm;
 
 option go_package = "github.com/merlin-network/fury/x/dvm/types";
 

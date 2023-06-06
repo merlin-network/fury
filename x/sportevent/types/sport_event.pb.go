@@ -82,7 +82,7 @@ type SportEvent struct {
 	// winner_odds_uids is the list of winner odds universal unique identifiers.
 	WinnerOddsUIDs []string `protobuf:"bytes,5,rep,name=winner_odds_uids,proto3" json:"winner_odds_uids"`
 	// status is the current status of the sport-event.
-	Status SportEventStatus `protobuf:"varint,6,opt,name=status,proto3,enum=merlinnetwork.fury.sportevent.SportEventStatus" json:"status,omitempty"`
+	Status SportEventStatus `protobuf:"varint,6,opt,name=status,proto3,enum=fanfury.fury.sportevent.SportEventStatus" json:"status,omitempty"`
 	// resolution_ts is the timestamp of the resolution of sport-event.
 	ResolutionTS uint64 `protobuf:"varint,7,opt,name=resolution_ts,proto3" json:"resolution_ts"`
 	// creator is the address of the creator of sport-event.
@@ -249,9 +249,9 @@ func (m *EventBetConstraints) XXX_DiscardUnknown() {
 var xxx_messageInfo_EventBetConstraints proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterEnum("merlinnetwork.fury.sportevent.SportEventStatus", SportEventStatus_name, SportEventStatus_value)
-	proto.RegisterType((*SportEvent)(nil), "merlinnetwork.fury.sportevent.SportEvent")
-	proto.RegisterType((*EventBetConstraints)(nil), "merlinnetwork.fury.sportevent.EventBetConstraints")
+	proto.RegisterEnum("fanfury.fury.sportevent.SportEventStatus", SportEventStatus_name, SportEventStatus_value)
+	proto.RegisterType((*SportEvent)(nil), "fanfury.fury.sportevent.SportEvent")
+	proto.RegisterType((*EventBetConstraints)(nil), "fanfury.fury.sportevent.EventBetConstraints")
 }
 
 func init() { proto.RegisterFile("fury/sportevent/sport_event.proto", fileDescriptor_f4c38f73099259f8) }

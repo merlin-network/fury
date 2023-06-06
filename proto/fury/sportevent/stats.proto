@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.sportevent;
+package fanfury.fury.sportevent;
 
 option go_package = "github.com/merlin-network/fury/x/sportevent/types";
 

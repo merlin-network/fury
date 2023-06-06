@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.mint;
+package fanfury.fury.mint;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";

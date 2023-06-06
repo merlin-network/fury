@@ -66,7 +66,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "merlinnetwork.fury.house.Params")
+	proto.RegisterType((*Params)(nil), "fanfury.fury.house.Params")
 }
 
 func init() { proto.RegisterFile("fury/house/params.proto", fileDescriptor_632fcdf2e68e6d32) }

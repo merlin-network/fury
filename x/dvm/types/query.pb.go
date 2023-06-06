@@ -621,18 +621,18 @@ func (m *QueryFinishedPublicKeysChangeProposalsResponse) GetPagination() *query.
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "merlinnetwork.fury.dvm.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "merlinnetwork.fury.dvm.QueryParamsResponse")
-	proto.RegisterType((*QueryPubKeysRequest)(nil), "merlinnetwork.fury.dvm.QueryPubKeysRequest")
-	proto.RegisterType((*QueryPubKeysResponse)(nil), "merlinnetwork.fury.dvm.QueryPubKeysResponse")
-	proto.RegisterType((*QueryActivePublicKeysChangeProposalRequest)(nil), "merlinnetwork.fury.dvm.QueryActivePublicKeysChangeProposalRequest")
-	proto.RegisterType((*QueryActivePublicKeysChangeProposalResponse)(nil), "merlinnetwork.fury.dvm.QueryActivePublicKeysChangeProposalResponse")
-	proto.RegisterType((*QueryActivePublicKeysChangeProposalsRequest)(nil), "merlinnetwork.fury.dvm.QueryActivePublicKeysChangeProposalsRequest")
-	proto.RegisterType((*QueryActivePublicKeysChangeProposalsResponse)(nil), "merlinnetwork.fury.dvm.QueryActivePublicKeysChangeProposalsResponse")
-	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalRequest)(nil), "merlinnetwork.fury.dvm.QueryFinishedPublicKeysChangeProposalRequest")
-	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalResponse)(nil), "merlinnetwork.fury.dvm.QueryFinishedPublicKeysChangeProposalResponse")
-	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalsRequest)(nil), "merlinnetwork.fury.dvm.QueryFinishedPublicKeysChangeProposalsRequest")
-	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalsResponse)(nil), "merlinnetwork.fury.dvm.QueryFinishedPublicKeysChangeProposalsResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "fanfury.fury.dvm.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "fanfury.fury.dvm.QueryParamsResponse")
+	proto.RegisterType((*QueryPubKeysRequest)(nil), "fanfury.fury.dvm.QueryPubKeysRequest")
+	proto.RegisterType((*QueryPubKeysResponse)(nil), "fanfury.fury.dvm.QueryPubKeysResponse")
+	proto.RegisterType((*QueryActivePublicKeysChangeProposalRequest)(nil), "fanfury.fury.dvm.QueryActivePublicKeysChangeProposalRequest")
+	proto.RegisterType((*QueryActivePublicKeysChangeProposalResponse)(nil), "fanfury.fury.dvm.QueryActivePublicKeysChangeProposalResponse")
+	proto.RegisterType((*QueryActivePublicKeysChangeProposalsRequest)(nil), "fanfury.fury.dvm.QueryActivePublicKeysChangeProposalsRequest")
+	proto.RegisterType((*QueryActivePublicKeysChangeProposalsResponse)(nil), "fanfury.fury.dvm.QueryActivePublicKeysChangeProposalsResponse")
+	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalRequest)(nil), "fanfury.fury.dvm.QueryFinishedPublicKeysChangeProposalRequest")
+	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalResponse)(nil), "fanfury.fury.dvm.QueryFinishedPublicKeysChangeProposalResponse")
+	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalsRequest)(nil), "fanfury.fury.dvm.QueryFinishedPublicKeysChangeProposalsRequest")
+	proto.RegisterType((*QueryFinishedPublicKeysChangeProposalsResponse)(nil), "fanfury.fury.dvm.QueryFinishedPublicKeysChangeProposalsResponse")
 }
 
 func init() { proto.RegisterFile("fury/dvm/query.proto", fileDescriptor_cfb9990f7b27fb76) }
@@ -721,7 +721,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -730,7 +730,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) PubKeys(ctx context.Context, in *QueryPubKeysRequest, opts ...grpc.CallOption) (*QueryPubKeysResponse, error) {
 	out := new(QueryPubKeysResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/PubKeys", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/PubKeys", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -739,7 +739,7 @@ func (c *queryClient) PubKeys(ctx context.Context, in *QueryPubKeysRequest, opts
 
 func (c *queryClient) ActivePublicKeysChangeProposal(ctx context.Context, in *QueryActivePublicKeysChangeProposalRequest, opts ...grpc.CallOption) (*QueryActivePublicKeysChangeProposalResponse, error) {
 	out := new(QueryActivePublicKeysChangeProposalResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/ActivePublicKeysChangeProposal", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/ActivePublicKeysChangeProposal", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -748,7 +748,7 @@ func (c *queryClient) ActivePublicKeysChangeProposal(ctx context.Context, in *Qu
 
 func (c *queryClient) ActivePublicKeysChangeProposals(ctx context.Context, in *QueryActivePublicKeysChangeProposalsRequest, opts ...grpc.CallOption) (*QueryActivePublicKeysChangeProposalsResponse, error) {
 	out := new(QueryActivePublicKeysChangeProposalsResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/ActivePublicKeysChangeProposals", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/ActivePublicKeysChangeProposals", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -757,7 +757,7 @@ func (c *queryClient) ActivePublicKeysChangeProposals(ctx context.Context, in *Q
 
 func (c *queryClient) FinishedPublicKeysChangeProposal(ctx context.Context, in *QueryFinishedPublicKeysChangeProposalRequest, opts ...grpc.CallOption) (*QueryFinishedPublicKeysChangeProposalResponse, error) {
 	out := new(QueryFinishedPublicKeysChangeProposalResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/FinishedPublicKeysChangeProposal", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/FinishedPublicKeysChangeProposal", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -766,7 +766,7 @@ func (c *queryClient) FinishedPublicKeysChangeProposal(ctx context.Context, in *
 
 func (c *queryClient) FinishedPublicKeysChangeProposals(ctx context.Context, in *QueryFinishedPublicKeysChangeProposalsRequest, opts ...grpc.CallOption) (*QueryFinishedPublicKeysChangeProposalsResponse, error) {
 	out := new(QueryFinishedPublicKeysChangeProposalsResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.dvm.Query/FinishedPublicKeysChangeProposals", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.dvm.Query/FinishedPublicKeysChangeProposals", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -826,7 +826,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/Params",
+		FullMethod: "/fanfury.fury.dvm.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -844,7 +844,7 @@ func _Query_PubKeys_Handler(srv interface{}, ctx context.Context, dec func(inter
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/PubKeys",
+		FullMethod: "/fanfury.fury.dvm.Query/PubKeys",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).PubKeys(ctx, req.(*QueryPubKeysRequest))
@@ -862,7 +862,7 @@ func _Query_ActivePublicKeysChangeProposal_Handler(srv interface{}, ctx context.
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/ActivePublicKeysChangeProposal",
+		FullMethod: "/fanfury.fury.dvm.Query/ActivePublicKeysChangeProposal",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ActivePublicKeysChangeProposal(ctx, req.(*QueryActivePublicKeysChangeProposalRequest))
@@ -880,7 +880,7 @@ func _Query_ActivePublicKeysChangeProposals_Handler(srv interface{}, ctx context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/ActivePublicKeysChangeProposals",
+		FullMethod: "/fanfury.fury.dvm.Query/ActivePublicKeysChangeProposals",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ActivePublicKeysChangeProposals(ctx, req.(*QueryActivePublicKeysChangeProposalsRequest))
@@ -898,7 +898,7 @@ func _Query_FinishedPublicKeysChangeProposal_Handler(srv interface{}, ctx contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/FinishedPublicKeysChangeProposal",
+		FullMethod: "/fanfury.fury.dvm.Query/FinishedPublicKeysChangeProposal",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).FinishedPublicKeysChangeProposal(ctx, req.(*QueryFinishedPublicKeysChangeProposalRequest))
@@ -916,7 +916,7 @@ func _Query_FinishedPublicKeysChangeProposals_Handler(srv interface{}, ctx conte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.dvm.Query/FinishedPublicKeysChangeProposals",
+		FullMethod: "/fanfury.fury.dvm.Query/FinishedPublicKeysChangeProposals",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).FinishedPublicKeysChangeProposals(ctx, req.(*QueryFinishedPublicKeysChangeProposalsRequest))
@@ -925,7 +925,7 @@ func _Query_FinishedPublicKeysChangeProposals_Handler(srv interface{}, ctx conte
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "merlinnetwork.fury.dvm.Query",
+	ServiceName: "fanfury.fury.dvm.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

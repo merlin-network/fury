@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.orderbook;
+package fanfury.fury.orderbook;
 
 import "gogoproto/gogo.proto";
 import "fury/orderbook/params.proto";

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.dvm;
+package fanfury.fury.dvm;
 
 import "fury/dvm/vote.proto";
 

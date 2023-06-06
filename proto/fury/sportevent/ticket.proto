@@ -1,6 +1,6 @@
 
 syntax = "proto3";
-package merlinnetwork.fury.sportevent;
+package fanfury.fury.sportevent;
 
 import "fury/sportevent/sport_event.proto";
 import "fury/sportevent/odds.proto";

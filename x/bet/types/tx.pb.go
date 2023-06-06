@@ -137,8 +137,8 @@ func (m *MsgPlaceBetResponse) GetBet() *PlaceBetFields {
 }
 
 func init() {
-	proto.RegisterType((*MsgPlaceBet)(nil), "merlinnetwork.fury.bet.MsgPlaceBet")
-	proto.RegisterType((*MsgPlaceBetResponse)(nil), "merlinnetwork.fury.bet.MsgPlaceBetResponse")
+	proto.RegisterType((*MsgPlaceBet)(nil), "fanfury.fury.bet.MsgPlaceBet")
+	proto.RegisterType((*MsgPlaceBetResponse)(nil), "fanfury.fury.bet.MsgPlaceBetResponse")
 }
 
 func init() { proto.RegisterFile("fury/bet/tx.proto", fileDescriptor_38b4167f68c2a7f8) }
@@ -190,7 +190,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) PlaceBet(ctx context.Context, in *MsgPlaceBet, opts ...grpc.CallOption) (*MsgPlaceBetResponse, error) {
 	out := new(MsgPlaceBetResponse)
-	err := c.cc.Invoke(ctx, "/merlinnetwork.fury.bet.Msg/PlaceBet", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/fanfury.fury.bet.Msg/PlaceBet", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -225,7 +225,7 @@ func _Msg_PlaceBet_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/merlinnetwork.fury.bet.Msg/PlaceBet",
+		FullMethod: "/fanfury.fury.bet.Msg/PlaceBet",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).PlaceBet(ctx, req.(*MsgPlaceBet))
@@ -234,7 +234,7 @@ func _Msg_PlaceBet_Handler(srv interface{}, ctx context.Context, dec func(interf
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "merlinnetwork.fury.bet.Msg",
+	ServiceName: "fanfury.fury.bet.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

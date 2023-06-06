@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.orderbook;
+package fanfury.fury.orderbook;
 
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";

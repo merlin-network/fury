@@ -79,7 +79,7 @@ func (m *GenesisState) GetParams() Params {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "merlinnetwork.fury.strategicreserve.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "fanfury.fury.strategicreserve.GenesisState")
 }
 
 func init() {

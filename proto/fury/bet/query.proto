@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.bet;
+package fanfury.fury.bet;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -72,7 +72,7 @@ message QueryBetRequest {
 // Query/Bet RPC method.
 message QueryBetResponse {
   Bet bet = 1 [ (gogoproto.nullable) = false ];
-  merlinnetwork.fury.sportevent.SportEvent sport_event = 2
+  fanfury.fury.sportevent.SportEvent sport_event = 2
       [ (gogoproto.nullable) = false ];
 }
 

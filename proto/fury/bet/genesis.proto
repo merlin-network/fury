@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.bet;
+package fanfury.fury.bet;
 
 import "gogoproto/gogo.proto";
 import "fury/bet/params.proto";

@@ -70,7 +70,7 @@ func (m *SportEventStats) GetResolvedUnsettled() []string {
 }
 
 func init() {
-	proto.RegisterType((*SportEventStats)(nil), "merlinnetwork.fury.sportevent.SportEventStats")
+	proto.RegisterType((*SportEventStats)(nil), "fanfury.fury.sportevent.SportEventStats")
 }
 
 func init() { proto.RegisterFile("fury/sportevent/stats.proto", fileDescriptor_bc09ed4418b895cc) }

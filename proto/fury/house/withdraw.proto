@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.house;
+package fanfury.fury.house;
 
 import "gogoproto/gogo.proto";
 

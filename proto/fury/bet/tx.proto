@@ -1,5 +1,5 @@
 syntax = "proto3";
-package merlinnetwork.fury.bet;
+package fanfury.fury.bet;
 
 import "fury/bet/place_bet_fields.proto";
 

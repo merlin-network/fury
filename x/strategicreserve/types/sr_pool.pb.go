@@ -68,7 +68,7 @@ func (m *SRPool) XXX_DiscardUnknown() {
 var xxx_messageInfo_SRPool proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*SRPool)(nil), "merlinnetwork.fury.strategicreserve.SRPool")
+	proto.RegisterType((*SRPool)(nil), "fanfury.fury.strategicreserve.SRPool")
 }
 
 func init() {

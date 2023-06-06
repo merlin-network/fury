@@ -78,7 +78,7 @@ func (m *Deposit) XXX_DiscardUnknown() {
 var xxx_messageInfo_Deposit proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Deposit)(nil), "merlinnetwork.fury.house.Deposit")
+	proto.RegisterType((*Deposit)(nil), "fanfury.fury.house.Deposit")
 }
 
 func init() { proto.RegisterFile("fury/house/deposit.proto", fileDescriptor_c6f2840908fc45a1) }
